@@ -1,35 +1,33 @@
 name: Waka Readme
 
 on:
-    # for manual workflow trigger
-    workflow_dispatch:
-    schedule:
-        # runs at 7 PM UTC (12 AM Almaty time)
-        - cron: '0 19 * * *'
+  workflow_dispatch:
+  schedule:
+    - cron: '0 19 * * *' # каждый день в 7 PM UTC (12 ночи по Алматы)
 
 jobs:
-    update-readme:
-        name: WakaReadme DevMetrics
-        runs-on: ubuntu-latest
-        steps:
-            # this action name
-            - uses: athul/waka-readme@master # do NOT replace with anything else
-              with:
-                  WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }} # required
-                  ### meta
-                  API_BASE_URL: https://wakatime.com/api # optional
-                  ### content
-                  SHOW_TITLE: true # optional
-                  SECTION_NAME: waka # optional
-                  #   BLOCKS: -> # optional
-                  CODE_LANG: abap # optional
-                  TIME_RANGE: last_30_days # optional
-                  LANG_COUNT: 5 # optional
-                  SHOW_TIME: true # optional
-                  SHOW_TOTAL: true # optional
-                  SHOW_MASKED_TIME: false # optional
-                  IGNORED_LANGUAGES: YAML JSON TOML # optional
-                  ### commit
-                  COMMIT_MESSAGE: updated coding metrics # optional
-                  TARGET_BRANCH: main # optional
-                  TARGET_PATH: README.md # optional
+  update-readme:
+    name: WakaReadme DevMetrics
+    runs-on: ubuntu-latest
+    steps:
+      - uses: athul/waka-readme@master
+        with:
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+
+          # Настройки содержимого
+          SHOW_TITLE: true
+          SECTION_NAME: waka
+          TIME_RANGE: last_30_days
+          LANG_COUNT: 10
+          SHOW_TIME: true
+          SHOW_TOTAL: true
+          SHOW_MASKED_TIME: false
+          IGNORED_LANGUAGES: YAML JSON TOML
+
+          # Это важно для отображения графиков
+          SHOW_BAR: true
+
+          # Настройки коммита
+          COMMIT_MESSAGE: updated coding metrics
+          TARGET_BRANCH: main
+          TARGET_PATH: README.md
