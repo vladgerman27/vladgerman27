@@ -33,3 +33,4 @@ jobs:
                   COMMIT_MESSAGE: updated coding metrics # optional
                   TARGET_BRANCH: main # optional
                   TARGET_PATH: README.md # optional
+                  GH_TOKEN: ${{ secrets.GH_TOKEN }}
