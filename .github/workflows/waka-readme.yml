@@ -1,39 +1,38 @@
 name: Waka Readme
 
 on:
-  # для ручного запуска workflow
-  workflow_dispatch:
-  schedule:
-    # выполняется каждый день в 22:00 по времени Алматы (16:00 UTC)
-    - cron: '0 16 * * *'
+    # for manual workflow trigger
+    workflow_dispatch:
+    schedule:
+        # runs at 10 PM Almaty time (16:00 UTC)
+        - cron: '0 16 * * *'
 
 jobs:
-  update-readme:
-    name: WakaReadme DevMetrics
-    runs-on: ubuntu-latest
-    steps:
-      - uses: athul/waka-readme@master
-        with:
-          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }} # required
-          
-          ### meta
-          API_BASE_URL: https://wakatime.com/api # optional
-          
-          ### content
-          SHOW_TITLE: true          # Показывать заголовок
-          SECTION_NAME: waka        # Название секции
-          CODE_LANG: abap           # Язык по умолчанию (неважно, если LANG_COUNT > 1)
-          TIME_RANGE: last_30_days  # Период сбора статистики
-          LANG_COUNT: 5             # Кол-во отображаемых языков
-          SHOW_TIME: true           # Показывать время
-          SHOW_TOTAL: true          # Показывать общее время
-          SHOW_MASKED_TIME: false   # Не маскировать время
-          IGNORED_LANGUAGES: YAML JSON TOML # Исключить эти языки из статистики
-          SHOW_EDITORS: true        # Показывать редакторы (VS Code, Vim и т.д.)
-          SHOW_OS: true             # Показывать ОС (Windows, macOS, Linux)
-          
-          ### commit
-          COMMIT_MESSAGE: updated coding metrics # Сообщение коммита
-          TARGET_BRANCH: main                   # Ветка для коммита
-          TARGET_PATH: README.md                # Файл для вставки
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}     # Токен GitHub
+    update-readme:
+        name: WakaReadme DevMetrics
+        runs-on: ubuntu-latest
+        steps:
+            # this action name
+            - uses: athul/waka-readme@master # do NOT replace with anything else
+              with:
+                  WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }} # required
+                  ### meta
+                  API_BASE_URL: https://wakatime.com/api # optional
+                  ### content
+                  SHOW_TITLE: true # optional
+                  SECTION_NAME: waka # optional
+                  #   BLOCKS: -> # optional
+                  CODE_LANG: abap # optional
+                  TIME_RANGE: last_30_days # optional
+                  LANG_COUNT: 5 # optional
+                  SHOW_TIME: true # optional
+                  SHOW_TOTAL: true # optional
+                  SHOW_MASKED_TIME: false # optional
+                  SHOW_EDITORS: true        
+                  SHOW_OS: true            
+                  IGNORED_LANGUAGES: YAML JSON TOML # optional
+                  ### commit
+                  COMMIT_MESSAGE: updated coding metrics # optional
+                  TARGET_BRANCH: main # optional
+                  TARGET_PATH: README.md # optional
+                  GH_TOKEN: ${{ secrets.GH_TOKEN }}
