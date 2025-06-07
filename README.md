@@ -1,15 +1,15 @@
 <!--START_SECTION:waka-->
 
 ```abap
-From: 05 May 2025 - To: 04 June 2025
+From: 06 May 2025 - To: 05 June 2025
 
-Total Time: 93 hrs 55 mins
+Total Time: 99 hrs 50 mins
 
-TypeScript       72 hrs 15 mins  ███████████████████▒░░░░░   76.93 %
-Python           10 hrs 14 mins  ██▓░░░░░░░░░░░░░░░░░░░░░░   10.91 %
-JavaScript       5 hrs 53 mins   █▓░░░░░░░░░░░░░░░░░░░░░░░   06.27 %
-Bash             1 hr 59 mins    ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.13 %
-CSS              41 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.73 %
+TypeScript       77 hrs 56 mins  ███████████████████▓░░░░░   78.07 %
+Python           10 hrs 15 mins  ██▓░░░░░░░░░░░░░░░░░░░░░░   10.28 %
+JavaScript       5 hrs 53 mins   █▒░░░░░░░░░░░░░░░░░░░░░░░   05.90 %
+Bash             2 hrs 2 mins    ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.05 %
+CSS              41 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.69 %
 ```
 
 <!--END_SECTION:waka-->
