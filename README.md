@@ -1,14 +1,14 @@
 <!--START_SECTION:waka-->
 
 ```abap
-From: 26 June 2025 - To: 26 July 2025
+From: 27 June 2025 - To: 27 July 2025
 
-Total Time: 50 hrs 10 mins
+Total Time: 45 hrs 50 mins
 
-TypeScript          22 hrs 4 mins   ███████████░░░░░░░░░░░░░░   43.98 %
-Python              15 hrs 6 mins   ███████▓░░░░░░░░░░░░░░░░░   30.10 %
-Bash                3 hrs 49 mins   ██░░░░░░░░░░░░░░░░░░░░░░░   07.62 %
-Env File            1 hr 21 mins    ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.70 %
+TypeScript          19 hrs 2 mins   ██████████▒░░░░░░░░░░░░░░   41.52 %
+Python              14 hrs 16 mins  ███████▓░░░░░░░░░░░░░░░░░   31.15 %
+Bash                3 hrs 49 mins   ██░░░░░░░░░░░░░░░░░░░░░░░   08.33 %
+Env File            1 hr 18 mins    ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.85 %
 ```
 
 <!--END_SECTION:waka-->
