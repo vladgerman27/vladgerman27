@@ -1,14 +1,14 @@
 <!--START_SECTION:waka-->
 
 ```abap
-From: 07 August 2025 - To: 06 September 2025
+From: 09 August 2025 - To: 08 September 2025
 
-Total Time: 79 hrs 42 mins
+Total Time: 77 hrs 41 mins
 
-TypeScript       73 hrs 41 mins  ███████████████████████░░   92.45 %
-Env File         52 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.09 %
-Bash             44 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.94 %
-yarn.lock        12 mins         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.25 %
+TypeScript       71 hrs 34 mins  ███████████████████████░░   92.13 %
+Env File         57 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.24 %
+Bash             44 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.96 %
+yarn.lock        12 mins         ░░░░░░░░░░░░░░░░░░░░░░░░░   00.26 %
 ```
 
 <!--END_SECTION:waka-->
