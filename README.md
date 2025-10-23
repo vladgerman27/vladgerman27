@@ -1,13 +1,12 @@
 <!--START_SECTION:waka-->
 
 ```abap
-From: 20 September 2025 - To: 20 October 2025
+From: 21 September 2025 - To: 21 October 2025
 
-Total Time: 41 hrs 8 mins
+Total Time: 39 hrs 44 mins
 
-TypeScript       39 hrs 20 mins  ████████████████████████░   95.64 %
-Bash             19 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.80 %
-Env File         8 mins          ░░░░░░░░░░░░░░░░░░░░░░░░░   00.36 %
+TypeScript       38 hrs 3 mins   ████████████████████████░   95.79 %
+Bash             19 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.82 %
 Makefile         1 min           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.05 %
 ```
 
